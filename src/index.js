@@ -7,15 +7,15 @@ function isPrime(number) {
   for (let i = 2, s = Math.sqrt(number); i <= s; i++) {
     if (number % i === 0) return false
   }
-  return true
+  return number > 1
 }
 
 
 
 function getColor(number) {
-  if (isPrime(number)) return 'red' // return red for prime numbers
-  if (number % 2 === 0) return 'green'  // return green for even numbers
-  return 'yellow' // return yellow for odd numbers
+  if (isPrime(number)) return 'rgb(254, 254, 98)' // return red for prime numbers
+  if (number % 2 === 0) return 'rgb(94, 171, 94)'  // return green for even numbers
+  return 'rgb(215, 82, 82)' // return yellow for odd numbers
 }
 
 
@@ -38,7 +38,7 @@ const BoxList = ({ numbers }) => {
 
 const App = () => {
   return (
-    <main>
+    <main> 
       <ul className="box-list">
         <BoxList numbers={Array.from(Array(31).keys())}/>
       </ul>

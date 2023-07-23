@@ -1,0 +1,18 @@
+.box-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.box-item {
+    list-style: none;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    margin: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    border: 1px solid black
+}
